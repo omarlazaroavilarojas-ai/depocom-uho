@@ -1,12 +1,13 @@
 {
-  "name": "backend",
+  "name": "depocom-backend",
   "version": "1.0.0",
+  "description": "Entorno de desarrollo Backend para DepoCom UHO",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.19.2"
   }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DepoCom UHO - Sistema Interactivo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div>
+      <div class="ph-title">DepoCom UHO</div>
+      <div class="ph-sub">Sistema de Gesti&oacute;n del Dep&oacute;sito de Equipos y Piezas de C&oacute;mputo</div>
+    </div>
+    <div class="ph-badge">Universidad de Holgu&iacute;n &middot; Modo Local Activo</div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <div class="user-info">
+        <div class="username">Omar L&aacute;zaro &Aacute;vila</div>
+        <div class="user-role">Administrador del Sistema</div>
+      </div>
+      
+      <nav class="nav-links">
+        <span class="nav-section">Principal</span>
+        <button class="nav-item on" data-target="dashboard">📊 Dashboard</button>
+        <button class="nav-item" data-target="solicitudes">📝 Solicitudes</button>
+        <button class="nav-item" data-target="deposito">🏭 Dep&oacute;sito</button>
+        <button class="nav-item" data-target="despiece">🔧 Despiece</button>
+        <button class="nav-item" data-target="almacen">💾 Almac&eacute;n Piezas</button>
+        
+        <span class="nav-section">Configuraci&oacute;n</span>
+        <button class="nav-item" data-target="administracion">⚙️ Administraci&oacute;n</button>
+      </nav>
+    </aside>
+
+    <main class="content-body" id="main-content">
+      </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
