@@ -1,0 +1,43 @@
+# --- ARCHIVOS DE ENTORNO ---
+.env
+.env.local
+.env.*.local
+
+# --- DEPENDENCIAS ---
+/vendor/
+/node_modules/
+
+# --- LOGS Y CACHÉS ---
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/bootstrap/cache/
+
+# --- ARCHIVOS DEL FRONTEND ---
+/dist/
+/build/
+/public/hot
+/public/storage
+
+# --- EDITORES ---
+.idea/
+.vscode/
+
+# --- ARCHIVOS DEL SISTEMA ---
+.DS_Store
+Thumbs.db
+
+# --- ARCHIVOS DE PAQUETES ---
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# --- ARCHIVOS DE BLOQUEO ---
+composer.lock
+package-lock.json
+yarn.lock
+
+# --- DOCKER ---
+/docker/*.pid
