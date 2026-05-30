@@ -1,36 +1,13 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  backend:
-    build: ./backend
-    container_name: depocom-backend
-    env_file: .env
-    depends_on:
-      - db
+  depocom-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: depocom_server_uho
     ports:
-      - "8000:8000"
-    volumes:
-      - ./backend:/var/www/html
-
-  frontend:
-    build: ./frontend
-    container_name: depocom-frontend
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./frontend:/app
-
-  db:
-    image: postgres:15
-    container_name: depocom-db
+      - "5000:5000"
     environment:
-      POSTGRES_DB: depocom
-      POSTGRES_USER: depocom_user
-      POSTGRES_PASSWORD: depocom_pass
-    volumes:
-      - db_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-
-volumes:
-  db_data:
+      - NODE_ENV=production
+    restart: always
